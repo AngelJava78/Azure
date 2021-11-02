@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queues", "Azure\Queues.csproj", "{AD52EB65-0920-4BC3-8669-1988CCA4B047}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicSender", "TopicSender\TopicSender.csproj", "{FE0E21FA-774C-4180-9965-688D0479C6EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriptionReceiver", "SubscriptionReceiver\SubscriptionReceiver.csproj", "{71A100EB-B24B-4C68-859C-FBE57B3C6834}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FE0E21FA-774C-4180-9965-688D0479C6EC} = {FE0E21FA-774C-4180-9965-688D0479C6EC}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,14 @@ Global
 		{AD52EB65-0920-4BC3-8669-1988CCA4B047}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD52EB65-0920-4BC3-8669-1988CCA4B047}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD52EB65-0920-4BC3-8669-1988CCA4B047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE0E21FA-774C-4180-9965-688D0479C6EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0E21FA-774C-4180-9965-688D0479C6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0E21FA-774C-4180-9965-688D0479C6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0E21FA-774C-4180-9965-688D0479C6EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71A100EB-B24B-4C68-859C-FBE57B3C6834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A100EB-B24B-4C68-859C-FBE57B3C6834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A100EB-B24B-4C68-859C-FBE57B3C6834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A100EB-B24B-4C68-859C-FBE57B3C6834}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
