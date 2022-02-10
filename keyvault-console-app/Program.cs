@@ -31,7 +31,7 @@ namespace keyvault_console_app
             Console.Write("Input the value of your secret: ");
             var secretValue = Console.ReadLine();
 
-            Console.Write($"Creating a seret in: {keyVaultName} called: {secretName} with the value: {secretValue}... ");
+            Console.Write($"Creating a secret in: {keyVaultName} called: {secretName} with the value: {secretValue}... ");
             client.SetSecret(secretName, secretValue);
             Console.WriteLine("Done");
 
